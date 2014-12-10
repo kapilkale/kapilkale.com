@@ -1,11 +1,34 @@
 !!! 5
-%home
+%html
   %head
     %title
       Kapil Kale
     %meta{:name => "description", :content => 'Kapil Kale\'s personal page'}
-    %link{:href => "/stylesheets/normalize.css", :rel => "stylesheet", :type => "text/css"}
-    %link{:href => "stylesheets/skeleton.css", :rel => "stylesheet", :type => "text/css"}
+    = css :application
 
   %body
-    %h1 Hello world
+    .hero
+      .container
+        .row
+          .twelve.columns
+            %h1
+              %span.bolded
+                Kapil
+              Kale
+            %p.subheader
+              %span
+                San Francisco, CA
+              ·
+              %span
+                New York, NY
+        .row
+          .four.columns.offset-by-four.column
+            %p
+              Most of my work in the past 4 years has been around startups. In 2010, I started a company called
+              %a{href: "http://www.giftrocket.com"} GiftRocket
+              with a few friends. I've since started two other companies that haven't fared as well.
+            %p
+              I currently spend my time working on various tech projects, reading, and playing sports.
+
+
+

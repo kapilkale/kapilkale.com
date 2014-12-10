@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,300italic);
+
+$grey-1: #fcf9f9;
+$grey-2: #cecaca;
+$grey-3: #c4bbbb;
+$grey-4: #ababab;
+$link-color: #ec594c;
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 500px;
+  height: 100vh;
+  @media (min-width: 550px) {
+    background-image: url(/images/bg-768.png?embed);
+  }
+  @media (min-width: 768px) {
+    background-image: url(/images/bg-1200.png?embed);
+  }
+  @media (min-width: 1200px) {
+    background-image: url(/images/bg-1920.png?embed);
+  }
+  @media (max-width: 550px) {
+    background-image: url(/images/bg-500.png?embed);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 60px 0 0 0;
+  color: $grey-4;
+  font-size: 75px;
+  font-weight: 100;
+  span.bolded {
+    font-weight: 100;
+    color: $grey-1;
+  }
+}
+p.subheader {
+  margin: 0 0 30px 0;
+  font-style: italic;
+  color: $grey-2;
+  span {
+    padding: 0 5px;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
+  color: $grey-3;
+  span.highlight {
+    color: $link-color;
+  }
+}
