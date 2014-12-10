@@ -28,6 +28,7 @@ PLATFORMS
 DEPENDENCIES
   erubis
   haml
+  rack
   rack-rewrite
   sinatra
   sinatra-assetpack
