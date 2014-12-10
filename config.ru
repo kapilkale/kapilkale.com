@@ -10,4 +10,4 @@ use Rack::Rewrite do
   }
 end
 
-run Sinatra::Application
+run App
